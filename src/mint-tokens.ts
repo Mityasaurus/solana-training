@@ -16,11 +16,11 @@ const connection = new Connection(clusterApiUrl("devnet"));
 const MINOR_UNITS_PER_MAJOR_UNITS = Math.pow(10, 2);
 
 const tokenMintAccount = new PublicKey(
-  "7MRpEUAxPyUb6BadoWmEwNK4WTGCTTEjzmvLx6dJbiwn"
+  "Fw9YMh5ywx8iWBRPvW3ej3YJcMSmYBE1LgjrJHnAn3PW"
 );
 
 const recipientAssociatedTokenAccount = new PublicKey(
-  "7Z2kTBcWhEMkYAbz67TSJkeK7EoWPvU8FynTv1p76auV"
+  "2QL7cwHsQM3BHS9L3GJqZ4a5S3xSYEqYBL7WHAqHnt8U"
 );
 
 const transactionSignature = await mintTo(
@@ -29,7 +29,7 @@ const transactionSignature = await mintTo(
   tokenMintAccount,
   recipientAssociatedTokenAccount,
   sender,
-  10 * MINOR_UNITS_PER_MAJOR_UNITS
+  9999 * MINOR_UNITS_PER_MAJOR_UNITS
 );
 
 const link = getExplorerLink("transaction", transactionSignature, "devnet");

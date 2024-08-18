@@ -26,12 +26,12 @@ const TOKEN_METADATA_PROGRAM_ID = new PublicKey(
 );
 
 const tokenMintAccount = new PublicKey(
-  "7MRpEUAxPyUb6BadoWmEwNK4WTGCTTEjzmvLx6dJbiwn"
+  "Fw9YMh5ywx8iWBRPvW3ej3YJcMSmYBE1LgjrJHnAn3PW"
 );
 
 const metadataData = {
-  name: "Solana UA Bootcamp 2024-08-06",
-  symbol: "UAB-2",
+  name: "Apple Token",
+  symbol: "APL",
   // Arweave / IPFS / Pinata etc link using metaplex standard for off-chain data
   uri: "https://arweave.net/1234",
   sellerFeeBasisPoints: 0,
